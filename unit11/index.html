@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week-11</title>
+</head>
+
+<body>
+    <h1>solution 1</h1>
+    <script>
+        // solution 1
+var now = new Date()
+var fmtStr = `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`
+document.write(`<p>${fmtStr}</p>`)
+    </script>
+    <div id="soln2">
+        <h1>solution 2</h1>
+        <br>
+        <input type="button" value="Click me!" onclick="soln2()">
+        <h1 id="result">Result:</h2>
+    </div>
+    <br>
+    <div>
+        <h1>solution 3</h1>
+        <br>
+        <div id="soln3" onmouseover="mOver()" onmouseout="mOut()">Hover here!</div>
+    </div>
+    <br>
+    <div>
+        <h1>solution 4</h1>
+        <p id="soln4">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, laboriosam corrupti ullam eum non 
+           <BR> necessitatibus sapiente veniam perspiciatis maxime rem nam enim modi quibusdam suscipit. Voluptatem 
+            <BR>nostrum odit reiciendis expedita.
+        </p>
+    </div>
+    <br>
+    <div>
+        <h1>solution 5</h1>
+        <br>
+        <input type="text" id="validator">
+
+        <br>
+        <input type="button" value="valid?" onclick="check_valid()"></input>
+        <br>
+        <br>
+        <input type="password" id="pwd">
+        <br>
+        <input type="password" id="pwd2">
+        <br>
+        <input type="button" value="confirm!" onclick="check_pwd()"></input>
+        <div id="status"></div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
